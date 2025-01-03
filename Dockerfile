@@ -1,9 +1,9 @@
 FROM mcr.microsoft.com/dotnet/runtime:3.1
 
-WORKDIR /app
+WORKDIR /bin
 
-COPY ./app .
+COPY ./bin .
 
 RUN chmod +x /app/EasyNetDev
 
-ENTRYPOINT ["/app/EasyNetDev"]
+ENTRYPOINT ["/bin/EasyNetDev"]
