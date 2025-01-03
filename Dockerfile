@@ -2,6 +2,8 @@ FROM mcr.microsoft.com/dotnet/runtime:6.0
 
 WORKDIR /app
 
-COPY . .
+COPY ./app .
 
-ENTRYPOINT ["./EasyNetDev"]
+RUN chmod +x /app/EasyNetDev
+
+ENTRYPOINT ["/app/EasyNetDev"]
