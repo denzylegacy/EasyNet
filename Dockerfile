@@ -4,6 +4,6 @@ WORKDIR /bin
 
 COPY ./bin .
 
-RUN chmod +x /app/EasyNetDev
+RUN chmod +x /bin/EasyNetDev
 
 ENTRYPOINT ["/bin/EasyNetDev"]
